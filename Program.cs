@@ -1,12 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ConsoleAppDemo
+namespace elmt_unique
 {
     class Program
+
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var numbers = new List<int> { 5, 5, 8, 2, 9, 8, 7, 1, 9 };
+            var unique = new List<int>(7);
+            // List<int> unique = new List<int>(7);
+
+
+            for (int i = 0; i < numbers.Count - 1; i++)
+            {
+
+                if (!unique.Contains(numbers[i]))
+                {
+                    unique.Add(numbers[i]);
+                }
+
+
+            }
+            foreach (int value in unique)
+                Console.WriteLine(value);
+            // Console.WriteLine(unique);
+            //Console.Write("'{0}' ", unique);
+
         }
     }
 }
+
