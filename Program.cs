@@ -30,6 +30,7 @@ namespace elmt_unique
                 Console.WriteLine(value);
             // Console.WriteLine(unique);
             //Console.Write("'{0}' ", unique);
+            //mise a jour 1 + 1
 
         }
     }
