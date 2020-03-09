@@ -25,8 +25,7 @@ namespace elmt_unique
 
 
             }
-            foreach (int value in unique)
-                Console.WriteLine(value);
+ //2
             // Console.WriteLine(unique);
             //Console.Write("'{0}' ", unique);
 
